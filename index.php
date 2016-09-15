@@ -1,5 +1,13 @@
 <?php
 
-$greeting = "Hola univers";
+$greeting = 'Hola';
 
-echo $greeting;
+//echo $greeting;
+
+$name = 'Dani';
+
+echo  "Hola ${name}a!" ;
+
+echo 'Hola ' . $name . '!' ;
+
+echo $greeting . $name . '!' ;
