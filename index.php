@@ -1,4 +1,5 @@
 <?php
 
+$greeting = "Hola univers";
 
-echo "Hola mon!";
+echo $greeting;
