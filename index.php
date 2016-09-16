@@ -35,8 +35,9 @@ $person = [
 //var_dump($names);
 //print_r($names);
 
-echo $names[0];
-echo $person['sn1'];
+//echo $names[0];
+//echo $person['sn1'];
+//echo $person['married'];
 
-//require 'index.template.php';
+require 'index.template.php';
 

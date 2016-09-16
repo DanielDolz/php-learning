@@ -8,22 +8,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-<!--        <ul>-->
-<!--            --><?php
-//            foreach ($names as $x) {
-//                echo "<li>$x</li>";
-//            }
-//            ?>
-<!--        </ul>-->
 
         <ul>
-            <?php foreach ($person as $feature => $featureValue) : ?>
-                <li>
-                    <strong><?=$feature?></strong> : <small><?=$featureValue?></small>
-                </li>
-            <?php endforeach; ?>
+
+            <li>//CONDICIONALS
+
+                //Opció1:
+                <?php
+                    if ($person['married']) {
+                            echo "Casat";
+                        } else {
+                            echo "Solter";
+                        }
+                ?>
+
+<!--                //Opció2:-->
+<!--                --><?//= $person['married'] ? "Casat" . "Solter" ; ?>
+            </li>
+
+
+
         </ul>
-    </h1>
+
 </body>
 </html>
