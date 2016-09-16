@@ -11,22 +11,7 @@
 
         <ul>
 
-            <li>//CONDICIONALS
-
-                //Opció1:
-                <?php
-                    if ($person['married']) {
-                            echo "Casat";
-                        } else {
-                            echo "Solter";
-                        }
-                ?>
-
-<!--                //Opció2:-->
-<!--                --><?//= $person['married'] ? "Casat" . "Solter" ; ?>
-            </li>
-
-
+            <li><?= hello('Sergi','Tur') ; ?></li>
 
         </ul>
 
