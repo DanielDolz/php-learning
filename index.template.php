@@ -9,7 +9,13 @@
 </head>
 <body>
 <h1>
-    <?= $greeting;?>
+    <ul>
+        <?php
+        foreach ($names as $x) {
+            echo "<li>$x</li>";
+        }
+        ?>
+    </ul>
 </h1>
 </body>
 </html>

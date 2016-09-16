@@ -11,10 +11,10 @@
 $names = [
     'Sergi',
     'Xavi',
-    'Romeu'
+    'Romeu',
+    45,
+    true
 ] ;
 
-foreach ($names as $name) {
-    echo "$name</br>";
-}
+require 'index.template.php';
 
