@@ -8,12 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-
-        <ul>
-
-            <li><?= hello('Sergi') ; ?></li>
-            <li><?= hellovtortosina('Sergi') ; ?></li>
-        </ul>
+            <?= printArgs(['1','2']) ; ?>
 
 </body>
 </html>
