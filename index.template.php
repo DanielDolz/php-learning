@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-            <?= printArgs(['1','2']) ; ?>
+            <?= sum(1,2,3,5,100,200) ; ?>
 
 </body>
 </html>

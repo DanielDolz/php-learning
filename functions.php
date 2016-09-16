@@ -13,3 +13,8 @@ function printArgs($args) {
         echo $arg . ',';
     }
 }
+
+function sum() {
+
+    return array_sum(func_get_args());
+}
