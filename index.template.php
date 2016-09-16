@@ -8,14 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-<h1>
-    <ul>
-        <?php
-        foreach ($names as $x) {
-            echo "<li>$x</li>";
-        }
-        ?>
-    </ul>
-</h1>
+    <h1>
+        // Millor opció per php
+        <ul>
+            <?php
+            foreach ($names as $x) {
+                echo "<li>$x</li>";
+            }
+            ?>
+        </ul>
+
+        // Millor opció per html
+        <ul>
+            <?php foreach ($names as $name) : ?>
+                <li><?=$name?></li>
+            <?php endforeach; ?>
+        </ul>
+    </h1>
 </body>
 </html>
