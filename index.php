@@ -1,5 +1,5 @@
 <?php
 
-$greeting = "Hola % GET['name']!";
+$greeting = "Hola " . $_GET['name'] . "!";
 
 require 'index.template.php';
