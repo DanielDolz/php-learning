@@ -21,19 +21,22 @@ $names = [
 
 $person = [
     'name' => 'Sergi',
-    'sni1' => 'Tur',
+    'sn1' => 'Tur',
     'sn2' => 'Badenas',
     'age' => 38,
-    'married' => yes
+    'married' => true
 ];
 
-die('Xivato!');
-echo "NO S'EXECUTA MAI!";
-dd();
+//die('Xivato!');
+//echo "NO S'EXECUTA MAI!";
+//dd();
+//
+////echo $names;
+//var_dump($names);
+//print_r($names);
 
-//echo $names;
-var_dump($names);
-print_r($names);
+echo $names[0];
+echo $person['sn1'];
 
 //require 'index.template.php';
 

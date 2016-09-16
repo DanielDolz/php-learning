@@ -9,17 +9,19 @@
 </head>
 <body>
     <h1>
-        <ul>
-            <?php
-            foreach ($names as $x) {
-                echo "<li>$x</li>";
-            }
-            ?>
-        </ul>
+<!--        <ul>-->
+<!--            --><?php
+//            foreach ($names as $x) {
+//                echo "<li>$x</li>";
+//            }
+//            ?>
+<!--        </ul>-->
 
         <ul>
-            <?php foreach ($names as $name) : ?>
-                <li><?=$name?></li>
+            <?php foreach ($person as $feature => $featureValue) : ?>
+                <li>
+                    <strong><?=$feature?></strong> : <small><?=$featureValue?></small>
+                </li>
             <?php endforeach; ?>
         </ul>
     </h1>
