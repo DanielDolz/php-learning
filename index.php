@@ -39,11 +39,13 @@
 //echo $person['sn1'];
 //echo $person['married'];
 
-copy ('a','b');
+//copy ('a','b');
+//
+//function hello($name, $sn1){
+//    echo "Hola " . $name . " " . $sn1 . "!";
+//}
 
-function hello($name, $sn1){
-    echo "Hola " . $name . " " . $sn1 . "!";
-}
+require 'functions.php';
 
 require 'index.template.php';
 

@@ -11,8 +11,8 @@
 
         <ul>
 
-            <li><?= hello('Sergi','Tur') ; ?></li>
-
+            <li><?= hello('Sergi') ; ?></li>
+            <li><?= hellovtortosina('Sergi') ; ?></li>
         </ul>
 
 </body>
