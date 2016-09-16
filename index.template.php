@@ -9,7 +9,6 @@
 </head>
 <body>
     <h1>
-        // Millor opció per php
         <ul>
             <?php
             foreach ($names as $x) {
@@ -18,7 +17,6 @@
             ?>
         </ul>
 
-        // Millor opció per html
         <ul>
             <?php foreach ($names as $name) : ?>
                 <li><?=$name?></li>
