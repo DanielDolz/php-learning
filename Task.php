@@ -26,17 +26,5 @@ class Task {
         $this->completed = true;
     }
 
-    // Setter
-    public function description($description) {
-
-        $this->description = $description;
-    }
-
-    // Getter
-    public function completed() {
-
-        return $this->completed;
-    }
-
 
 }
