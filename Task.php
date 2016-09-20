@@ -2,9 +2,9 @@
 
 class Task {
 
-    public $description;
+    protected $description;
 
-    protected $completed;
+    private $completed;
 
     public function __construct($description, $completed) {
 
@@ -14,7 +14,32 @@ class Task {
     }
 
     public function complete() {
+
         $this->completed = true;
     }
+
+    // Setter
+    public function description($description) {
+
+        $this->description = $description;
+    }
+
+    // Getter
+    public function isComplete() {
+
+        return $this->completed;
+    }
+
+    // Getter + Setter
+    public function completed($completed=null) {
+
+        if ($completed == null) {
+            return $completed;
+        }
+
+        $this->completed = $completed;
+
+    }
+
 
 }

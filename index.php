@@ -11,8 +11,8 @@ $task = new Task("Aprendre PHP ",false);
 var_dump($task);
 
 $task->complete();
-//$task->completed = true;   --> Menys segur
-
+$task->description("Un altra cosa");
+echo $task->completed();
 var_dump($task);
 
 
