@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - prova@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="prova">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="Botiga"/>
+    <schema id="3" name="exercit"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="m6u2_OrgGest_db"/>
+    <schema id="6" name="m6u2_OrgGest_db2"/>
+    <schema id="7" name="mysql"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="sys"/>
+    <schema id="10" name="world"/>
+    <table id="11" parent="1" name="todos"/>
+    <column id="12" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="13" parent="11" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="14" parent="11" name="completed">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <key id="15" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
