@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f33205c-77a7-4a33-93e5-a6f73a8c1d01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/QueryBuilder.php" afterPath="$PROJECT_DIR$/database/QueryBuilder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="php-learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,12 +110,12 @@
           <file leaf-file-name="QueryBuilder.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/database/QueryBuilder.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="100">
-                  <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                <state relative-caret-position="360">
+                  <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
                   <folding>
-                    <marker date="1474401211021" expanded="true" signature="425:439" ph="SELECT * FRO... $" />
-                    <marker date="1474401211021" expanded="true" signature="425:447" ph="SELECT * FRO... todos" />
-                    <marker date="1474401211021" expanded="true" signature="425:449" ph="SELECT * FRO... " />
+                    <marker date="1474401644177" expanded="true" signature="1034:1048" ph="SELECT * FRO... $" />
+                    <marker date="1474401644177" expanded="true" signature="1034:1056" ph="SELECT * FRO... todos" />
+                    <marker date="1474401644177" expanded="true" signature="1034:1058" ph="SELECT * FRO... " />
                   </folding>
                 </state>
               </provider>
@@ -291,12 +289,12 @@
       <workItem from="1473965524871" duration="2000" />
       <workItem from="1473965554833" duration="4043000" />
       <workItem from="1474033126613" duration="6768000" />
-      <workItem from="1474378681287" duration="14278000" />
+      <workItem from="1474378681287" duration="14707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25091000" />
+    <option name="totallyTimeSpent" value="25520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="124" y="52" width="1316" height="848" extended-state="0" />
@@ -437,12 +435,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/QueryBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <marker date="1474401211021" expanded="true" signature="425:439" ph="SELECT * FRO... $" />
-            <marker date="1474401211021" expanded="true" signature="425:447" ph="SELECT * FRO... todos" />
-            <marker date="1474401211021" expanded="true" signature="425:449" ph="SELECT * FRO... " />
+            <marker date="1474401644177" expanded="true" signature="1034:1048" ph="SELECT * FRO... $" />
+            <marker date="1474401644177" expanded="true" signature="1034:1056" ph="SELECT * FRO... todos" />
+            <marker date="1474401644177" expanded="true" signature="1034:1058" ph="SELECT * FRO... " />
           </folding>
         </state>
       </provider>
