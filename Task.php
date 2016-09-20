@@ -4,9 +4,15 @@
 
 class Task {
 
-    protected $description;
+    public $description;
 
-    private $completed;
+    public $completed;
+
+    /**
+     * Task constructor.
+     * @param $description
+     * @param $completed
+     */
 
     public function __construct($description, $completed) {
 
