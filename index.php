@@ -15,9 +15,9 @@ $pdo = Connection::make();
 //$connection = new Connection();
 //$pdo = $connection->make();
 
-$query = new QueryBuilder();
-$tasks = $query->all($pdo,'todos');
-
+$query = new QueryBuilder($pdo);
+$tasks = $query->all('todos');
+//$tasks = $query->all('asdfasdfa',$pdo,'todos');
 //$tasks = Task::all();
 
 require 'index.template.php';
