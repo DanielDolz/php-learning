@@ -5,25 +5,22 @@ require 'functions.php';
 
 class Task {
 
-    public function __construct($a,$b,$c) {
-//        echo "Nova tasca construida";
-        echo $a;
-        echo $b;
-        echo $c;
+    public $description;
+
+    public $completed;
+
+    public function __construct($description, $completed) {
+
+        $this->description = $description;
+        $this->completed = $completed;
+
     }
-
-
-
 
 }
 
-$task = new Task("ARRI","QUI","TAUN");
-//$task2 = new Task;
-//$task3 = new Task;
+$task = new Task("Aprendre PHP ",false);
 
-//$task = new Task();
-
-//var_dump($task);
-
+var_dump($task->description);
+var_dump($task->completed);
 //require 'index.template.php';
 
