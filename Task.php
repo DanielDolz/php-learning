@@ -1,5 +1,7 @@
 <?php
 
+// POPO: Plain Old PHP Object | Contenedor de tasques | Model
+
 class Task {
 
     protected $description;
@@ -25,20 +27,9 @@ class Task {
     }
 
     // Getter
-    public function isComplete() {
+    public function completed() {
 
         return $this->completed;
-    }
-
-    // Getter + Setter
-    public function completed($completed=null) {
-
-        if ($completed == null) {
-            return $completed;
-        }
-
-        $this->completed = $completed;
-
     }
 
 

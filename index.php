@@ -6,14 +6,26 @@ require 'functions.php';
 require 'Task.php';
 
 
-$task = new Task("Aprendre PHP ",false);
+// PDO: Php Data Objects
 
-var_dump($task);
+//die ("Hola");
 
-$task->complete();
-$task->description("Un altra cosa");
-echo $task->completed();
-var_dump($task);
+try {
+    $pdo = new PDO('mysql:host=127.0.0.1;dbname=prova','debian-sys-maint','taKIgQGMVowkc2aP');
+// No deuriem posar el pwd -> Tinc problemes x accedir com a root, quan ho resolgue a casa
+//                            ho canviaré
+}
+catch (PDOExceptionException $e) {
+
+    die("Error durant la connexió. Motiu: " . $e->getMessage());
+
+}
+
+$query = $pdo->prepare('SELECT * FROM todos');
+
+$query->execute();
+
+var_dump($query->fetchAll());
 
 
 
