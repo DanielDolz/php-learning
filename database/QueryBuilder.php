@@ -39,41 +39,26 @@ class QueryBuilder {
     public $pdo;
 
     /**
-     * DEPENDENCY INJECTION
      * QueryBuilder constructor.
      * @param $pdo
      */
-
-    public function __construct(PDO $pdo)
-    {
+    public function __construct(PDO $pdo) {
         $this->pdo = $pdo;
     }
 
+    //Collaborators / Dependències
 
-
-    // ***Dependency injection***
+    //Dependency injection
 
     /**
      * @param $pdo
      *
      * Type hinting
      */
-
-    function all($table)
-    {
-        $query = $this->pdo->prepare("SELECT * FROM {$table}");
-
+    function all($table) {
+        $query = $this->pdo->prepare("SELECT * FROM ($table)");
         $query->execute();
-
-        return $query->fetchAll(
-            PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE,
-            Task::class);
+        $tasks = $query->fetchAll(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, Task::class);
+        return $tasks;
     }
-
-//    function quasiAll();
-//
-//    function deleteAll();
-//
-//    function deleteOne();
-
 }

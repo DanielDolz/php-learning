@@ -1,24 +1,21 @@
 <?php
 
 
+//Configuració
+$config = require 'config/database.php';
+//Funcions
 require 'functions.php';
-
+//Classes
 require 'Task.php';
-
 require 'database/Connection.php';
-
 require 'database/QueryBuilder.php';
 
+$pdo = Connection::make($config); //Mètode estàtic.
 
-$pdo = Connection::make();
 
-//$connection = new Connection();
-//$pdo = $connection->make();
 
 $query = new QueryBuilder($pdo);
 $tasks = $query->all('todos');
-//$tasks = $query->all('asdfasdfa',$pdo,'todos');
-//$tasks = Task::all();
 
+//Plantilla/Vista
 require 'index.template.php';
-
