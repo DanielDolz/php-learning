@@ -9,17 +9,17 @@
 </head>
 <body>
 
-<ul>
-    <?php require 'menu.php' ?>
-</ul>
+    <ul>
+        <?php require 'menu.php' ?>
+    </ul>
 
-<ul>
-    <?php foreach ($persons as $person) : ?>
-        <li>
-            <?= $person->LastName ?>
-        </li>
-    <?php endforeach; ?>
-</ul>
+    <ul>
+        <?php foreach ($persons as $person) : ?>
+            <li>
+                <?= $person->LastName ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
 
 </body>
 </html>

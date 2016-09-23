@@ -33,7 +33,7 @@ class Router
     }
 
     /**
-     * @param $routes
+     * @param $routes -> Path to file with routes
      * @return static
      */
     public static function load($routes)    {
