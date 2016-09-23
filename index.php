@@ -1,11 +1,17 @@
 <?php
 
-require 'core/bootstrap.php';
-
+require "core/bootstrap.php";
+require "core/Request.php";
 require 'routes.php';
 
+// POO
 
-$uri = trim($_SERVER['REQUEST_URI'],'/');
+//HTTP -> Request -> Response
+
+//$request = new Request;
+//$uri = $request->uri();
+
+$uri = Request::uri();
 
 if ( array_key_exists($uri,$routes)) {
     require $routes[$uri];
@@ -13,5 +19,3 @@ if ( array_key_exists($uri,$routes)) {
     throw new Exception("No s'ha trobat la ruta");
 }
 
-// DRY: DON'T REPEAT YOURSELF
-// WET: WRITE EVERYTHING TWICE
